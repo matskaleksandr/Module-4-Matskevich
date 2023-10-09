@@ -6,16 +6,13 @@ namespace Solution_2
     {
         static void Main(string[] args)
         {
-            // Создание объекта StoreManager для управления списком товаров
-            StoreManager storeManager = new StoreManager();
-
+            StoreManager storeManager = new StoreManager();//создание объекта StoreManager для управления списком товаров
             while (true)
             {
                 Console.WriteLine("Выберите действие:");
                 Console.WriteLine("1. Добавить товар");
                 Console.WriteLine("2. Просмотреть список товаров");
                 Console.WriteLine("3. Выход");
-
                 if (int.TryParse(Console.ReadLine(), out int choice))
                 {
                     switch (choice)
@@ -29,8 +26,7 @@ namespace Solution_2
                                 Console.Write("Введите остаток товара на складе: ");
                                 if (int.TryParse(Console.ReadLine(), out int stock))
                                 {
-                                    // Создание нового товара (Book) и добавление его в хранилище
-                                    IProduct newProduct = new Book(title, price, stock);
+                                    IProduct newProduct = new Book(title, price, stock);//создание нового товара (Book) и добавление его в хранилище
                                     storeManager.AddProduct(newProduct);
                                     Console.WriteLine("Товар добавлен.");
                                 }
@@ -44,12 +40,10 @@ namespace Solution_2
                                 Console.WriteLine("Некорректный ввод стоимости. Попробуйте снова.");
                             }
                             break;
-                        case 2:
-                            // Вывод списка товаров из хранилища
+                        case 2://вывод списка товаров из хранилища
                             storeManager.DisplayProducts();
                             break;
-                        case 3:
-                            // Выход из программы
+                        case 3://выход из программы
                             Environment.Exit(0);
                             break;
                         default:
