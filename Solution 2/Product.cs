@@ -1,13 +1,13 @@
 ﻿namespace Solution_2
 {
-    internal class Book : IProduct
+    internal class Product : IProduct
     {
         private string title;//название книги
         private double price;//стоимость книги
         private int stock;//количество книг в наличии на складе
 
         //конструктор класса Book
-        public Book(string title, double price, int stock)
+        public Product(string title, double price, int stock)
         {
             this.title = title;
             this.price = price;
