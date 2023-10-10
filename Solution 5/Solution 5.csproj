@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{387C4048-493E-4B33-A8B7-18A1EB26F87B}</ProjectGuid>
+    <ProjectGuid>{7F9F3557-366D-47DC-9B03-2F61565AD4B6}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Solution_1</RootNamespace>
-    <AssemblyName>Solution 1</AssemblyName>
+    <RootNamespace>Solution_5</RootNamespace>
+    <AssemblyName>Solution 5</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,12 +43,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Circle.cs" />
-    <Compile Include="IShape.cs" />
+    <Compile Include="Canvas.cs" />
+    <Compile Include="IDrawing.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Rectangle.cs" />
-    <Compile Include="Triangle.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
