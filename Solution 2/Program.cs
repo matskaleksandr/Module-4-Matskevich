@@ -26,7 +26,7 @@ namespace Solution_2
                                 Console.Write("Введите остаток товара на складе: ");
                                 if (int.TryParse(Console.ReadLine(), out int stock))
                                 {
-                                    IProduct newProduct = new Product(title, price, stock);//создание нового товара (Book) и добавление его в хранилище
+                                    IProduct newProduct = new Product(title, price, stock);//создание нового товара и добавление его в хранилище
                                     storeManager.AddProduct(newProduct);
                                     Console.WriteLine("Товар добавлен.");
                                 }
