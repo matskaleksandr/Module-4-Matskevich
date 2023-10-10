@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Solution_5
 {
@@ -16,7 +12,7 @@ namespace Solution_5
             Console.WriteLine("4.Очистить холст");
             Console.WriteLine("5.Выйти");
 
-            Canvas canvas = new Canvas(40, 40);
+            Canvas canvas = new Canvas(20, 20);
 
             bool running = true;
             while (running)
@@ -70,7 +66,6 @@ namespace Solution_5
                     }
 
                     Console.Clear();
-                    Console.WriteLine("Доступные команды:");
                     Console.WriteLine("1. Нарисовать линию");
                     Console.WriteLine("2. Нарисовать окружность");
                     Console.WriteLine("3. Нарисовать прямоугольник");
